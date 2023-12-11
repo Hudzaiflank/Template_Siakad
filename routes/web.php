@@ -42,6 +42,8 @@ Route::prefix('users')->group(function () {
     //* UserView itu method baru, masukin method di usercontroller nya
 
     Route::get('/add', [UserController::class, 'UserAdd'])->name('users.add');
+
+    Route::post('/store', [UserController::class, 'UserStore'])->name('users.store');
 });
 
 
